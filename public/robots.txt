@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Replace with your live domain once known:
+# Sitemap: https://www.example.com/sitemap.xml
