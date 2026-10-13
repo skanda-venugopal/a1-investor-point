@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Phone, ShieldCheck, MapPin, CalendarDays } from 'lucide-react'
 import logo from '../assets/logo-full.png'
 import { PeakMotif } from './Motif.jsx'
-import { SITE, CONTACT, FLAGS } from '../data/site.js'
+import { SITE, FLAGS } from '../data/site.js'
 
 export default function HeroSection() {
   return (
@@ -24,13 +24,12 @@ export default function HeroSection() {
           <div className="mt-9 flex flex-wrap gap-3">
             <Link to="/mutual-funds" className="btn btn-primary">Explore Mutual Funds <ArrowRight size={16} aria-hidden="true" /></Link>
             <Link to="/insurance" className="btn btn-green">Explore Insurance <ArrowRight size={16} aria-hidden="true" /></Link>
-            <Link to="/contact" className="btn btn-ghost">Contact Us</Link>
           </div>
           <dl className="mt-12 grid max-w-xl grid-cols-1 gap-5 border-t border-navy-100 pt-8 sm:grid-cols-3">
             <div><dt className="text-xs font-semibold uppercase tracking-wider text-ink-mute">In the business</dt><dd className="mt-1 font-serif text-2xl font-semibold text-navy-700">Since {SITE.foundedYear}</dd></div>
             {FLAGS.showClientCount && <div><dt className="text-xs font-semibold uppercase tracking-wider text-ink-mute">Clients helped</dt><dd className="mt-1 font-serif text-2xl font-semibold text-navy-700">{FLAGS.clientCountText}</dd></div>}
             <div><dt className="text-xs font-semibold uppercase tracking-wider text-ink-mute">Services</dt><dd className="mt-1 font-serif text-2xl font-semibold text-navy-700">Funds &amp; Insurance</dd></div>
-            <div><dt className="text-xs font-semibold uppercase tracking-wider text-ink-mute">Based in</dt><dd className="mt-1 font-serif text-2xl font-semibold text-navy-700">Bokaro</dd></div>
+            <div><dt className="text-xs font-semibold uppercase tracking-wider text-ink-mute">Based in</dt><dd className="mt-1 font-serif text-2xl font-semibold text-navy-700">Bokaro, Jharkhand</dd></div>
           </dl>
         </div>
 

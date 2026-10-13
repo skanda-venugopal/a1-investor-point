@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="md:col-span-4">
           <h2 className="font-sans text-xs font-semibold uppercase tracking-[.18em] !text-leaf-300">Contact</h2>
           <ul className="mt-4 space-y-3 text-sm">
-            <li className="flex gap-3"><Phone size={17} className="mt-0.5 shrink-0 text-leaf-300" aria-hidden="true" /><a className="hover:text-white" href={CONTACT.phoneHref}>{CONTACT.phoneDisplay}</a></li>
+            <li className="flex gap-3"><Phone size={17} className="mt-0.5 shrink-0 text-leaf-300" aria-hidden="true" /><a className="hover:text-white" href={CONTACT.phoneHref}>Call our office</a></li>
             <li className="flex gap-3"><Mail size={17} className="mt-0.5 shrink-0 text-leaf-300" aria-hidden="true" /><a className="break-all hover:text-white" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
             <li className="flex gap-3"><MapPin size={17} className="mt-0.5 shrink-0 text-leaf-300" aria-hidden="true" /><address className="not-italic leading-relaxed">{CONTACT.addressLines.join(', ')}</address></li>
           </ul>

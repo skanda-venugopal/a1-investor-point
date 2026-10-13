@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink, useLocation } from 'react-router-dom'
+import { Link, NavLink, useLocation } from 'react-router-dom'
 import { Menu, X, Phone } from 'lucide-react'
 import Logo from './Logo.jsx'
 import { NAV, CONTACT } from '../data/site.js'
@@ -36,7 +36,7 @@ export default function Navbar() {
           </ul>
         </nav>
         <div className="flex items-center gap-2">
-          <a href={CONTACT.phoneHref} className="btn btn-primary hidden !py-2.5 sm:inline-flex"><Phone size={16} aria-hidden="true" />{CONTACT.phoneDisplay}</a>
+          <Link to="/contact#phone" aria-label="View our phone number" className="btn btn-primary hidden !py-2.5 sm:inline-flex"><Phone size={16} aria-hidden="true" />Call us</Link>
           <button
             type="button" className="grid h-11 w-11 place-items-center rounded-full border border-navy-200 text-navy-700 lg:hidden"
             aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? 'Close menu' : 'Open menu'}
@@ -52,7 +52,7 @@ export default function Navbar() {
             {NAV.map((n) => (
               <li key={n.to}><NavLink to={n.to} end={n.end} className={({ isActive }) => `block rounded-xl px-4 py-3 text-base font-medium ${isActive ? 'bg-navy-50 text-navy-700' : 'text-ink-soft'}`}>{n.label}</NavLink></li>
             ))}
-            <li className="pt-2"><a href={CONTACT.phoneHref} className="btn btn-primary w-full"><Phone size={16} aria-hidden="true" />Call {CONTACT.phoneDisplay}</a></li>
+            <li className="pt-2"><Link to="/contact#phone" className="btn btn-primary w-full"><Phone size={16} aria-hidden="true" />Call us</Link></li>
           </ul>
         </nav>
       )}

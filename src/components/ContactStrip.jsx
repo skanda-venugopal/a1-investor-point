@@ -15,7 +15,7 @@ export default function ContactStrip({ title = 'Talk to us', text = 'Call, email
               <p className="mt-3 max-w-xl text-navy-100">{text}</p>
             </div>
             <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap lg:justify-end">
-              <a href={CONTACT.phoneHref} className="btn btn-light"><Phone size={16} aria-hidden="true" />{CONTACT.phoneDisplay}</a>
+              <a href={CONTACT.phoneHref} aria-label="Call A1 Investors Point" className="btn btn-light"><Phone size={16} aria-hidden="true" />Call us</a>
               <a href={`mailto:${CONTACT.email}`} className="btn btn-outline-light"><Mail size={16} aria-hidden="true" />Email us</a>
               <Link to="/contact" className="btn btn-green">Contact us</Link>
             </div>

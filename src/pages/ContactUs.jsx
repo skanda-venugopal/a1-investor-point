@@ -23,7 +23,7 @@ export default function ContactUs() {
         <div className="container-page grid gap-10 lg:grid-cols-[.8fr_1.2fr]">
           <div className="space-y-5">
             {items.map((it, i) => (
-              <Reveal key={it.label} delay={i * 80} className="card flex gap-4 !p-6">
+              <Reveal key={it.label} id={it.label === 'Phone' ? 'phone' : undefined} delay={i * 80} className="card flex gap-4 !p-6">
                 <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-leaf-50 text-leaf-600"><it.icon size={22} aria-hidden="true" /></span>
                 <div><h2 className="font-sans text-xs font-semibold uppercase tracking-wider !text-ink-mute">{it.label}</h2><div className="mt-1">{it.node}</div></div>
               </Reveal>

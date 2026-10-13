@@ -16,7 +16,7 @@ export const SITE = {
 }
 
 export const CONTACT = {
-  email: 'skanda.v@techcanpy.com',
+  email: 'aonectps@gmail.com',
   phoneDisplay: '+91 74887 36823',
   phoneHref: 'tel:+917488736823',
   addressLines: ['CF3, 1st Floor, Harshwardhan Plaza', 'Sector 4, Bokaro', 'Jharkhand 827004, India'],

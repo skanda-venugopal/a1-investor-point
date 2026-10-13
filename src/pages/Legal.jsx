@@ -28,7 +28,7 @@ export function Privacy() {
           <h2>Retention and your rights</h2>
           <p>We keep enquiry details only as long as needed to handle your request and meet our legal and record-keeping obligations. You may ask us to access, correct or delete your personal data, subject to applicable law.</p>
           <h2>Contact about your data</h2>
-          <p>Email <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> or call <a href={CONTACT.phoneHref}>{CONTACT.phoneDisplay}</a>. Postal address: {CONTACT.addressLines.join(', ')}.</p>
+          <p>Email <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> or <a href={CONTACT.phoneHref}>call our office</a>. Postal address: {CONTACT.addressLines.join(', ')}.</p>
           <p className="text-sm">Last updated: October 2026.</p>
         </div>
       </section>
